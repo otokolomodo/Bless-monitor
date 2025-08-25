@@ -13,10 +13,13 @@ def send_telegram(message: str):
         url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
         data = {"chat_id": CHAT_ID, "text": message}
         try:
-            requests.post(url, data=data, timeout=5)
+            r = requests.post(url, data=data, timeout=5)
+            print(f"📨 Telegram response: {r.status_code} | {r.text}")
         except Exception as e:
             print(f"⚠️ Failed to send Telegram message: {e}")
-
+    else:
+        print("⚠️ TELEGRAM_TOKEN or TELEGRAM_CHAT_ID not set")
+        
 def check_paths():
     for path in paths:
         url = f"{BASE_URL}/{path}"
@@ -39,4 +42,4 @@ if __name__ == "__main__":
         print("\n🔍 Checking endpoints...")
         check_paths()
         print("⏳ Sleeping 10 minutes...\n")
-        time.sleep(600)  # 10 minutes
+        time.sleep(60)  # 10 minutes
