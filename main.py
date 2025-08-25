@@ -42,4 +42,4 @@ if __name__ == "__main__":
         print("\n🔍 Checking endpoints...")
         check_paths()
         print("⏳ Sleeping 10 minutes...\n")
-        time.sleep(1800)  # 10 minutes
+        time.sleep(30)  # 10 minutes
