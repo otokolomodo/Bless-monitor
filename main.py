@@ -1,7 +1,7 @@
 import requests, time, os
 
-BASE_URL = "https://google.com"
-paths = ["images"]
+BASE_URL = "https://bless.network"
+paths = ["airdrop", "claim", "rewards", "distribution", "faucet"]
 headers = {"User-Agent": "Mozilla/5.0 (BlessMonitor)"}
 
 # 🔹 Telegram Bot settings
@@ -42,4 +42,4 @@ if __name__ == "__main__":
         print("\n🔍 Checking endpoints...")
         check_paths()
         print("⏳ Sleeping 10 minutes...\n")
-        time.sleep(30)  # 10 minutes
+        time.sleep(1800)  # 10 minutes
