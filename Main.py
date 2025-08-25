@@ -2,7 +2,7 @@ import requests, time, os
 
 BASE_URL = "https://google.com"
 paths = ["images"]
-headers = {"User-Agent": "Mozilla/5.0 (AirdropMonitor)"}
+headers = {"User-Agent": "Mozilla/5.0 (BlessMonitor)"}
 
 # 🔹 Telegram Bot settings
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")   # set in Railway variables
@@ -42,4 +42,4 @@ if __name__ == "__main__":
         print("\n🔍 Checking endpoints...")
         check_paths()
         print("⏳ Sleeping 10 minutes...\n")
-        time.sleep(60)  # 10 minutes
+        time.sleep(30)  # 10 minutes
