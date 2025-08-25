@@ -1,7 +1,7 @@
 import requests, time, os
 
-BASE_URL = "https://bless.network"
-paths = ["airdrop", "claim", "rewards", "distribution", "faucet"]
+BASE_URL = "https://google.com"
+paths = ["images"]
 headers = {"User-Agent": "Mozilla/5.0 (AirdropMonitor)"}
 
 # 🔹 Telegram Bot settings
